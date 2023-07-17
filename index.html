@@ -11,10 +11,10 @@
 </head>
 <body>
     <nav class="mainNav">
-        <a href="index.html" class="mainNav-linkLogo">Dashboard</a>
+        <a href="index.html" class="mainNav_linkLogo">Dashboard</a>
 
-        <div class="menus">
-            <ul class="menu">
+        <div class="mainNav_menus">
+            <ul class="mainNav_menu">
                 <li>
                     <a href="#">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/  2000/svg">
@@ -78,7 +78,7 @@
                 </li>
             </ul>
 
-            <ul class="menu">
+            <ul class="mainNav_menu">
                 <li>
                     <a href="#">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -120,36 +120,44 @@
             <div class="perfil_thumb">
                 <img src="imagens/perfil.png" alt="Alvaro">
             </div>
-            <div>Alvaro Santos</div>
-            <div>Front-end</div>
+            <div>
+                <div class="perfil_name">Alvaro Santos</div>
+                <div class="perfil_rule">Front-end</div>
+            </div>
         </section>
     </header>
 
     <main>
         <section class="summary">
             <article>
-                <span class="description">Announced today</span>
-                <span class="number">235600</span>
-            </article>
-            <article>
-                <span class="description">Prepare today</span>
-                <span class="number">16738</span>
-            </article>
-            <article>
-                <span class="description">Sorted today</span>
-                <span class="number">286</span>
+                <span class="summary_description">Announced Today</span>
+                <span class="summary_number">235600</span>
             </article>
 
-            <a href="#" class="btn">See more</a>
+            <div class="summary_separeted"></div>
+
+            <article>
+                <span class="summary_description">Prepare Today</span>
+                <span class="summary_number">16738</span>
+            </article>
+
+            <div class="summary_separeted"></div>
+            
+            <article>
+                <span class="summary_description">Sorted Today</span>
+                <span class="summary_number">286</span>
+            </article>
+
+            <a href="#" class="btn summary_btn">See more</a>
         </section>
 
         <figure>
             <img src="imagens/chart1.png" alt="chart1">
         </figure>
-        <figure>
+        <figure class="grid-half">
             <img src="imagens/chart2.png" alt="chart2">
         </figure>
-        <figure>
+        <figure class="grid-half">
             <img src="imagens/chart3.png" alt="chart3">
         </figure>
     </main>
